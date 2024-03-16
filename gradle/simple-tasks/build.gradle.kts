@@ -1,4 +1,14 @@
 
+plugins {
+    id("java")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17 // Specify the Java version you want to use
+    targetCompatibility = JavaVersion.VERSION_17 // Specify the target Java version if needed
+}
+
+
 println("This is executed during the configuration phase.")
 
 tasks.register("configured") {
